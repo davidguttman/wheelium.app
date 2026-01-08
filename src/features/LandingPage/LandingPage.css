@@ -57,6 +57,7 @@
   box-shadow: 10vw 15vh #fff, 30vw 45vh #fff, 70vw 10vh #fff, 90vw 80vh #fff, 50vw 50vh #fff, 20vw 80vh #fff, 80vw 30vh #fff, 15vw 25vh #fff, 65vw 75vh #fff;
   opacity: 0.5;
   animation: twinkle 5s infinite alternate;
+  will-change: transform;
 }
 
 .stars-md {
@@ -66,4 +67,5 @@
   box-shadow: 5vw 5vh #fff, 45vw 20vh #fff, 85vw 60vh #fff, 25vw 90vh #fff;
   opacity: 0.7;
   animation: twinkle 8s infinite alternate-reverse;
+  will-change: transform;
 }

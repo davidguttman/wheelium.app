@@ -1,17 +1,18 @@
-
-import React from 'react';
+import { Search, TrendingUp, History, Bell, Zap, BarChart3, LucideIcon } from 'lucide-react';
 import './FeaturesSection.css';
 
 interface FeatureCardProps {
   title: string;
   description: string;
-  iconClass: string;
+  Icon: LucideIcon;
 }
 
-const FeatureCard: React.FC<FeatureCardProps> = ({ title, description, iconClass }) => {
+const FeatureCard: React.FC<FeatureCardProps> = ({ title, description, Icon }) => {
   return (
     <div className="feature-card">
-      <div className={`feature-icon ${iconClass}`}></div>
+      <div className="feature-icon">
+        <Icon size={24} strokeWidth={2} />
+      </div>
       <h3 className="feature-title">{title}</h3>
       <p className="feature-description">{description}</p>
     </div>
@@ -23,32 +24,32 @@ const FeaturesSection: React.FC = () => {
     {
       title: "Smart Options Scoring",
       description: "Rank contracts by Delta, TastyTrade metrics, and Greeks. Find high-probability setups instantly.",
-      iconClass: 'icon-scoring'
+      Icon: Search
     },
     {
       title: "Wheel Advisor Signals",
       description: "Actionable recommendations to Hold, Roll, or Close positions based on urgency and profit targets.",
-      iconClass: 'icon-signals'
+      Icon: TrendingUp
     },
     {
       title: "Historical Backtesting",
       description: "Simulate full Wheel or rolling strategies over any date range using historical Polygon data.",
-      iconClass: 'icon-backtest'
+      Icon: History
     },
     {
       title: "Intelligent Alerts",
       description: "Never miss a move. Get Slack integration and proactive badges for urgent position management.",
-      iconClass: 'icon-alerts'
+      Icon: Bell
     },
     {
       title: "Seamless Execution",
       description: "Place multi-leg orders and manage your portfolio directly through secure Alpaca integration.",
-      iconClass: 'icon-execution'
+      Icon: Zap
     },
     {
       title: "Portfolio Analytics",
       description: "Track annualized returns, visualize risk, and compare performance against the underlying stock.",
-      iconClass: 'icon-analytics'
+      Icon: BarChart3
     }
   ];
 
