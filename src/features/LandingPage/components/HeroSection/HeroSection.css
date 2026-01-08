@@ -50,6 +50,13 @@
   line-height: 1.5;
 }
 
+.waitlist-container {
+  position: relative;
+  width: 100%;
+  max-width: 480px;
+  min-height: 60px;
+}
+
 .waitlist-form {
   display: flex;
   gap: 12px;
@@ -59,7 +66,49 @@
   border: 1px solid var(--color-border);
   backdrop-filter: blur(10px);
   width: 100%;
-  max-width: 480px;
+  transition: opacity 0.4s ease-out;
+}
+
+.waitlist-form.fade-out {
+  opacity: 0;
+  pointer-events: none;
+}
+
+.success-message {
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  text-align: center;
+  padding: 12px;
+}
+
+.success-message.fade-in {
+  animation: fadeIn 0.4s ease-out;
+}
+
+.success-title {
+  font-size: 1.25rem;
+  font-weight: 600;
+  color: var(--color-text-primary);
+  margin: 0 0 8px;
+}
+
+.success-detail {
+  font-size: 0.95rem;
+  color: var(--color-text-secondary);
+  margin: 0;
+}
+
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+    transform: translateY(10px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
 }
 
 .waitlist-input {
