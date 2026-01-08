@@ -1,6 +1,9 @@
 import React from 'react';
 import { createRoot } from 'react-dom/client';
 import App from './App';
+import { saasco } from './utils/saasco';
+
+saasco.init();
 
 const container = document.getElementById('app');
 if (container) {
