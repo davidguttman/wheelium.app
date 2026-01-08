@@ -58,10 +58,10 @@ const HeroSection: React.FC = () => {
     <section className="hero-section">
       <div className="hero-pill">Introducing Wheelium</div>
       <h1 className="hero-title">
-        Master the <span className="hero-title-italic">Wheel Strategy.</span>
+        From Wheel Strategy to <span className="hero-title-italic">Wheel System.</span>
       </h1>
       <p className="hero-subtitle">
-        Run the wheel strategy with confidence. Backtest your rules, analyze your trades, and optimize every position.
+        Backtest your rules, track what works, and never miss an entry or exit.
       </p>
 
       <div className="waitlist-container">
