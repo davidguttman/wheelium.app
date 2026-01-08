@@ -61,7 +61,7 @@ const HeroSection: React.FC = () => {
         Master the <span className="hero-title-italic">Wheel Strategy.</span>
       </h1>
       <p className="hero-subtitle">
-        Your complete options trading companion. Search high-probability signals, backtest strategies, and execute seamlessly on Alpaca.
+        Run the wheel strategy with confidence. Backtest your rules, analyze your trades, and optimize every position.
       </p>
 
       <div className="waitlist-container">

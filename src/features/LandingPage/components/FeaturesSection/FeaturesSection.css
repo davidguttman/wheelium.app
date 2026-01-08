@@ -27,8 +27,10 @@
 
 .features-grid {
   display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(340px, 1fr));
+  grid-template-columns: repeat(2, 1fr);
   gap: 32px;
+  max-width: 800px;
+  margin: 0 auto;
 }
 
 /* --- Feature Card --- */
@@ -76,4 +78,5 @@
 @media (max-width: 768px) {
   .features-section { padding: 60px 20px; }
   .features-header h2 { font-size: 2rem; }
+  .features-grid { grid-template-columns: 1fr; }
 }

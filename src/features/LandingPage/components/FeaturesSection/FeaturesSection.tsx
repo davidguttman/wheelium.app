@@ -1,4 +1,4 @@
-import { Search, TrendingUp, History, Bell, Zap, BarChart3, LucideIcon } from 'lucide-react';
+import { History, LineChart, Bell, Zap, LucideIcon } from 'lucide-react';
 import './FeaturesSection.css';
 
 interface FeatureCardProps {
@@ -22,42 +22,32 @@ const FeatureCard: React.FC<FeatureCardProps> = ({ title, description, Icon }) =
 const FeaturesSection: React.FC = () => {
   const features: FeatureCardProps[] = [
     {
-      title: "Smart Options Scoring",
-      description: "Rank contracts by Delta, TastyTrade metrics, and Greeks. Find high-probability setups instantly.",
-      Icon: Search
-    },
-    {
-      title: "Wheel Advisor Signals",
-      description: "Actionable recommendations to Hold, Roll, or Close positions based on urgency and profit targets.",
-      Icon: TrendingUp
-    },
-    {
-      title: "Historical Backtesting",
-      description: "Simulate full Wheel or rolling strategies over any date range using historical Polygon data.",
+      title: "Backtest Your Rules",
+      description: "Pick any symbol and test your strategy—entry delta, profit target, DTE, and more. See exactly how your rules would have performed.",
       Icon: History
     },
     {
-      title: "Intelligent Alerts",
-      description: "Never miss a move. Get Slack integration and proactive badges for urgent position management.",
+      title: "Trade Analytics",
+      description: "Import your trades and match opens to closes automatically. Discover which symbols, deltas, and timeframes give you the best annualized return on capital.",
+      Icon: LineChart
+    },
+    {
+      title: "Smart Alerts",
+      description: "Get notified when it's time to act—50% profit hit, price approaching your strike for a roll, or any rule you set. Never miss an optimal exit.",
       Icon: Bell
     },
     {
-      title: "Seamless Execution",
-      description: "Place multi-leg orders and manage your portfolio directly through secure Alpaca integration.",
+      title: "One-Click Execution",
+      description: "When you're ready, connect your brokerage and execute trades directly. Place orders without leaving Wheelium.",
       Icon: Zap
-    },
-    {
-      title: "Portfolio Analytics",
-      description: "Track annualized returns, visualize risk, and compare performance against the underlying stock.",
-      Icon: BarChart3
     }
   ];
 
   return (
     <section className="features-section">
       <div className="features-header">
-        <h2>Engineered for Options Traders</h2>
-        <p>Automate the heavy lifting and focus on strategy.</p>
+        <h2>Built for Wheel Traders</h2>
+        <p>From backtesting to execution, everything you need to run the wheel.</p>
       </div>
       <div className="features-grid">
         {features.map((feature, index) => (
