@@ -1,5 +1,4 @@
 import React from 'react';
-import { Link } from 'react-router-dom';
 import './Footer.css';
 
 const Footer: React.FC = () => {
@@ -8,9 +7,9 @@ const Footer: React.FC = () => {
       <div className="footer-content">
         <p>© {new Date().getFullYear()} Wheelium. All rights reserved.</p>
         <div className="footer-links">
-          <Link to="/terms">Terms of Use</Link>
+          <a href="/terms.html">Terms of Use</a>
           <span className="footer-divider">·</span>
-          <Link to="/privacy">Privacy Policy</Link>
+          <a href="/privacy.html">Privacy Policy</a>
         </div>
         <p className="footer-note">Not financial advice. For educational purposes only.</p>
       </div>
