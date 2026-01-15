@@ -17,6 +17,27 @@
   margin-bottom: 8px;
 }
 
+.footer-links {
+  margin-bottom: 12px;
+}
+
+.footer-links a {
+  color: var(--color-text-secondary);
+  text-decoration: none;
+  font-size: 0.875rem;
+  transition: color 0.2s ease;
+}
+
+.footer-links a:hover {
+  color: var(--color-accent-secondary);
+}
+
+.footer-divider {
+  color: var(--color-text-secondary);
+  margin: 0 12px;
+  opacity: 0.5;
+}
+
 .footer-note {
   font-size: 0.75rem !important;
   opacity: 0.6;
