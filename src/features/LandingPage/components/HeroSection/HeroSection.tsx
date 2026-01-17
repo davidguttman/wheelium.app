@@ -4,8 +4,8 @@ import { saasco } from '../../../../utils/saasco';
 import './HeroSection.css';
 
 const WAITLIST_KEY = 'wheelium_waitlist';
-const WAITLIST_START = new Date('2026-01-01T00:00:00Z').getTime(); // Fixed start date
-const SIGNUP_INTERVAL = 15 * 60 * 1000; // 15 minutes
+const WAITLIST_START = new Date('2025-10-06T00:00:00Z').getTime(); // 103 days before Jan 17, 2026
+const SIGNUP_INTERVAL = 12 * 60 * 60 * 1000; // 12 hours
 
 function getQueuePosition(): number {
   return Math.floor((Date.now() - WAITLIST_START) / SIGNUP_INTERVAL) + 1;
