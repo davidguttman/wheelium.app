@@ -1,0 +1,6 @@
+# robots.txt for Wheelium
+User-agent: *
+Allow: /
+
+# Sitemap location
+Sitemap: https://wheelium.app/sitemap.xml

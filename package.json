@@ -4,7 +4,10 @@
   "type": "module",
   "scripts": {
     "dev": "vite",
-    "build": "tsc && vite build",
+    "build:client": "tsc && vite build",
+    "build:ssr": "vite build --mode ssr",
+    "build:prerender": "tsx scripts/prerender.ts",
+    "build": "npm run build:client && npm run build:ssr && npm run build:prerender",
     "preview": "vite preview"
   },
   "dependencies": {
@@ -17,6 +20,8 @@
     "@types/react": "^18.2.0",
     "@types/react-dom": "^18.2.0",
     "@vitejs/plugin-react": "^4.2.1",
+    "jsdom": "^27.4.0",
+    "tsx": "^4.21.0",
     "typescript": "^5.3.3",
     "vite": "^5.0.12"
   }
