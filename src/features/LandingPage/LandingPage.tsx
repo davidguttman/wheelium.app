@@ -6,7 +6,7 @@ import './LandingPage.css';
 const LandingPage: React.FC = () => {
   return (
     <main className="landing-page">
-      <a href="https://app.wheelium.app" className="login-btn">Log in</a>
+      <a href="https://app.wheelium.app" className="login-btn" target="_blank" rel="noopener noreferrer">Log in</a>
       <div className="stars-container">
         <div className="stars-sm"></div>
         <div className="stars-md"></div>
